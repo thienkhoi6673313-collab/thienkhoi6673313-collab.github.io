@@ -389,7 +389,9 @@ img { max-width: 100%; display: block; }
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center center;
     border-radius: 50%;
+    display: block;
 }
 
 .hero-avatar:hover { transform: scale(1.05) rotate(-3deg); }
