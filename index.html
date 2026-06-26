@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页 | Developer & Creator</title>
+    <meta name="description" content="移动应用开发者，专注于健康科技、创意辅助与无障碍技术。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ========== 导航栏 ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-text">Dev.</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">关于</a></li>
+                <li><a href="#projects" class="nav-link">项目</a></li>
+                <li><a href="#skills" class="nav-link">技能</a></li>
+                <li><a href="#news" class="nav-link">动态</a></li>
+                <li><a href="#contact" class="nav-link">联系</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="menu-toggle" id="menuToggle" aria-label="菜单">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== Hero 区域 ========== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-content">
+            <div class="hero-avatar-wrapper reveal">
+                <div class="hero-avatar">
+                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                        <circle cx="12" cy="7" r="4"/>
+                    </svg>
+                </div>
+                <div class="hero-status-dot"></div>
+            </div>
+            <h1 class="hero-name reveal" style="animation-delay: 0.1s">你好，我是<span class="gradient-text">开发者</span></h1>
+            <p class="hero-title reveal" style="animation-delay: 0.2s">移动应用开发者 / 创意工具创造者 / 无障碍技术探索者</p>
+            <div class="hero-tags reveal" style="animation-delay: 0.3s">
+                <span class="tag">健康科技</span>
+                <span class="tag">创意辅助</span>
+                <span class="tag">无障碍技术</span>
+                <span class="tag">AI 应用</span>
+                <span class="tag">微信小程序</span>
+            </div>
+            <p class="hero-desc reveal" style="animation-delay: 0.4s">
+                专注于将传感器技术、AI 能力与用户体验深度融合，打造让人生活更好的应用。
+                从概念设计到原型落地，用代码连接创意与现实。
+            </p>
+            <div class="hero-actions reveal" style="animation-delay: 0.5s">
+                <a href="#projects" class="btn btn-primary">
+                    <span>查看项目</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#contact" class="btn btn-outline">联系我</a>
+            </div>
+            <div class="hero-socials reveal" style="animation-delay: 0.6s">
+                <a href="https://github.com/" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="mailto:hello@example.com" class="social-link" aria-label="Email">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+                <a href="#" target="_blank" rel="noopener" class="social-link" aria-label="WeChat">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.328.328 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .55-.012.821-.034-.175-.589-.27-1.207-.27-1.844 0-3.797 3.288-6.873 7.34-6.873.27 0 .536.014.798.04C16.43 4.398 12.86 2.188 8.69 2.188zm-2.85 1.85c.6 0 1.084.484 1.084 1.083 0 .6-.484 1.084-1.084 1.084a1.083 1.083 0 1 1 0-2.167zm5.7 0c.6 0 1.084.484 1.084 1.083 0 .6-.484 1.084-1.084 1.084a1.083 1.083 0 1 1 0-2.167zM16.594 9.45c-3.498 0-6.332 2.635-6.332 5.888 0 1.697.788 3.246 2.057 4.322a.503.503 0 0 1 .172.558l-.289 1.073c-.018.066-.038.135-.038.198 0 .135.108.243.243.243a.272.272 0 0 0 .14-.045l1.525-.891a.73.73 0 0 1 .6-.083 8.3 8.3 0 0 0 2.922.525c3.498 0 6.332-2.635 6.332-5.887s-2.834-5.901-6.332-5.901zm-2.1 1.75c.504 0 .913.409.913.913a.913.913 0 1 1-1.826 0c0-.504.409-.913.913-.913zm4.2 0c.504 0 .913.409.913.913a.913.913 0 1 1-1.826 0c0-.504.409-.913.913-.913z"/></svg>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- ========== 关于 ========== -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-number">01</span>
+                <h2 class="section-title">关于我</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p class="about-lead">
+                        我是一名移动应用开发者，致力于用技术解决真实世界的问题——从健康行为追踪到无障碍辅助，
+                        从创意工具到 AI 赋能应用。
+                    </p>
+                    <p>
+                        我相信好的产品诞生于对用户需求的深刻理解和对技术细节的极致追求。我的工作横跨
+                        <strong>Apple 生态系统开发</strong>（HealthKit / CoreMotion / Flutter）、
+                        <strong>AI 应用落地</strong>（LLM 微调 / 意图识别 / 情绪检测）以及
+                        <strong>微信小程序</strong>等多个平台。
+                    </p>
+                    <p>
+                        目前正在推进多个项目，包括基于生态球植物的情绪追踪应用、无感健康行为确认系统、
+                        面向听障人士的 AI 电话助手等。同时也在开展"十五五"规划与青年使命相关的政策研究。
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="6">0</span>
+                            <span class="stat-label">核心项目</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="4">0</span>
+                            <span class="stat-label">技术领域</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="100" data-suffix="%">0</span>
+                            <span class="stat-label">热情投入</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card reveal" style="transition-delay: 0.2s">
+                    <div class="info-card">
+                        <div class="info-card-header">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <h3>基本信息</h3>
+                        </div>
+                        <ul class="info-list">
+                            <li>
+                                <span class="info-label">所在地</span>
+                                <span class="info-value">中国</span>
+                            </li>
+                            <li>
+                                <span class="info-label">主语言</span>
+                                <span class="info-value">中文 / English</span>
+                            </li>
+                            <li>
+                                <span class="info-label">专注领域</span>
+                                <span class="info-value">健康 · 创意 · 无障碍</span>
+                            </li>
+                            <li>
+                                <span class="info-label">主力技术栈</span>
+                                <span class="info-value">Flutter / Swift / 微信小程序</span>
+                            </li>
+                            <li>
+                                <span class="info-label">当前状态</span>
+                                <span class="info-value"><span class="status-badge">开发中</span></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 项目 ========== -->
+    <section class="section section-alt" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-number">02</span>
+                <h2 class="section-title">精选项目</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="project-filters reveal">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="health">健康科技</button>
+                <button class="filter-btn" data-filter="ai">AI 应用</button>
+                <button class="filter-btn" data-filter="creative">创意工具</button>
+                <button class="filter-btn" data-filter="accessibility">无障碍</button>
+            </div>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal" data-category="health">
+                    <div class="project-icon" style="--icon-color: #34d399">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-tag">健康科技</span>
+                        <h3 class="project-name">植愈 PlantMood</h3>
+                        <p class="project-desc">基于生态球季节植物的情绪追踪应用。通过植物生长状态映射用户情绪变化，将心理健康管理与自然生态美学结合，打造沉浸式的自我关怀体验。</p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>CoreML</span>
+                            <span>HealthKit</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                详情
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal" data-category="health" style="transition-delay: 0.1s">
+                    <div class="project-icon" style="--icon-color: #60a5fa">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-tag">健康科技</span>
+                        <h3 class="project-name">无感健康行为确认系统</h3>
+                        <p class="project-desc">Apple 生态下通过 iPhone + Apple Watch 传感器自动识别并确认健康行为（运动、睡眠、服药），无需手动打卡，让健康追踪真正"无感"。</p>
+                        <div class="project-tech">
+                            <span>Swift</span>
+                            <span>HealthKit</span>
+                            <span>CoreMotion</span>
+                            <span>Flutter</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                详情
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal" data-category="ai accessibility" style="transition-delay: 0.2s">
+                    <div class="project-icon" style="--icon-color: #f472b6">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-tag">AI + 无障碍</span>
+                        <h3 class="project-name">AI 电话助手（听障版）</h3>
+                        <p class="project-desc">面向听障人士的 AI 电话助手，实时将对方语音转为文字、生成意图摘要并进行情绪检测，帮助听障用户独立完成电话沟通。</p>
+                        <div class="project-tech">
+                            <span>LLM</span>
+                            <span>ASR</span>
+                            <span>情绪检测</span>
+                            <span>意图摘要</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                详情
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card reveal" data-category="creative" style="transition-delay: 0.3s">
+                    <div class="project-icon" style="--icon-color: #fbbf24">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-tag">创意工具</span>
+                        <h3 class="project-name">儿童创意沙盒</h3>
+                        <p class="project-desc">面向儿童的创意沙盒 App，提供自由绘画、形状拼搭、动画创作等功能，激发儿童创造力与逻辑思维。注重儿童友好的交互设计与安全防护。</p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Canvas</span>
+                            <span>动画引擎</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                详情
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card reveal" data-category="ai" style="transition-delay: 0.4s">
+                    <div class="project-icon" style="--icon-color: #a78bfa">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-tag">AI 应用</span>
+                        <h3 class="project-name">LLM 微调与中文本地化</h3>
+                        <p class="project-desc">基于 LoRA 的大语言模型微调实践，聚焦中文场景下的指令跟随与领域适配，探索低资源环境下的高效模型定制方案。</p>
+                        <div class="project-tech">
+                            <span>LoRA</span>
+                            <span>PyTorch</span>
+                            <span>HuggingFace</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                详情
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card reveal" data-category="creative" style="transition-delay: 0.5s">
+                    <div class="project-icon" style="--icon-color: #22d3ee">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-tag">创意工具</span>
+                        <h3 class="project-name">微信小程序项目</h3>
+                        <p class="project-desc">正在开发与部署的微信小程序项目，结合云开发能力，提供轻量级的工具服务。涵盖从需求分析、原型设计到上架发布的全流程实践。</p>
+                        <div class="project-tech">
+                            <span>微信小程序</span>
+                            <span>云开发</span>
+                            <span>WXML/WXSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                详情
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 技能 ========== -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-number">03</span>
+                <h2 class="section-title">技术栈</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <div class="skill-cat-header">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                        <h3>移动开发</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="expert">Flutter</span>
+                        <span class="skill-tag" data-level="expert">Swift</span>
+                        <span class="skill-tag" data-level="advanced">SwiftUI</span>
+                        <span class="skill-tag" data-level="advanced">HealthKit</span>
+                        <span class="skill-tag" data-level="advanced">CoreMotion</span>
+                        <span class="skill-tag" data-level="intermediate">Android</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal" style="transition-delay: 0.1s">
+                    <div class="skill-cat-header">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 2a8 8 0 0 1 8 8h-2a6 6 0 0 0-6-6z"/></svg>
+                        <h3>AI / ML</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="advanced">LLM 微调</span>
+                        <span class="skill-tag" data-level="advanced">LoRA</span>
+                        <span class="skill-tag" data-level="intermediate">PyTorch</span>
+                        <span class="skill-tag" data-level="intermediate">HuggingFace</span>
+                        <span class="skill-tag" data-level="advanced">ASR / NLP</span>
+                        <span class="skill-tag" data-level="intermediate">情绪检测</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal" style="transition-delay: 0.2s">
+                    <div class="skill-cat-header">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        <h3>前端 / 小程序</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="advanced">微信小程序</span>
+                        <span class="skill-tag" data-level="advanced">云开发</span>
+                        <span class="skill-tag" data-level="intermediate">HTML/CSS/JS</span>
+                        <span class="skill-tag" data-level="intermediate">Vue</span>
+                        <span class="skill-tag" data-level="intermediate">Figma</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal" style="transition-delay: 0.3s">
+                    <div class="skill-cat-header">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                        <h3>工具 / 方法论</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="advanced">Obsidian</span>
+                        <span class="skill-tag" data-level="advanced">Git</span>
+                        <span class="skill-tag" data-level="advanced">Figma</span>
+                        <span class="skill-tag" data-level="intermediate">Docker</span>
+                        <span class="skill-tag" data-level="advanced">中文本地化</span>
+                        <span class="skill-tag" data-level="advanced">快速原型</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 技能图例 -->
+            <div class="skill-legend reveal">
+                <span class="legend-item"><span class="legend-dot expert"></span>精通</span>
+                <span class="legend-item"><span class="legend-dot advanced"></span>熟练</span>
+                <span class="legend-item"><span class="legend-dot intermediate"></span>掌握</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 动态 ========== -->
+    <section class="section section-alt" id="news">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-number">04</span>
+                <h2 class="section-title">最新动态</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2026.06</span>
+                        <h4 class="timeline-title">微信小程序项目进入上架准备阶段</h4>
+                        <p class="timeline-desc">完成核心功能开发与测试，正在进行最终审核与发布流程。</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal" style="transition-delay: 0.1s">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2026.05</span>
+                        <h4 class="timeline-title">无感健康行为确认系统 MVP 开发中</h4>
+                        <p class="timeline-desc">基于 Apple Watch + iPhone 传感器，实现运动自动识别、睡眠同步、服药确认与异常预警，计划 6 周完成 MVP。</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal" style="transition-delay: 0.2s">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2026.04</span>
+                        <h4 class="timeline-title">AI 电话助手功能原型完成</h4>
+                        <p class="timeline-desc">面向听障人士的 AI 电话助手完成核心功能原型，实现实时语音转文字、意图摘要与情绪检测。</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal" style="transition-delay: 0.3s">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2026.03</span>
+                        <h4 class="timeline-title">植愈 PlantMood 概念设计完成</h4>
+                        <p class="timeline-desc">完成基于生态球季节植物的情绪追踪应用概念设计，核心机制为植物生长状态映射用户情绪变化。</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal" style="transition-delay: 0.4s">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2026.02</span>
+                        <h4 class="timeline-title">开展"十五五"规划与青年使命研究课题</h4>
+                        <p class="timeline-desc">结合青年爱国教育与国家发展战略，进行深度政策研究分析。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 联系 ========== -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-number">05</span>
+                <h2 class="section-title">联系我</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-text reveal">
+                    <h3 class="contact-heading">有想法想要实现？</h3>
+                    <p class="contact-desc">
+                        无论是项目合作、技术交流，还是只是想打个招呼，都欢迎与我联系。
+                        我对健康科技、无障碍技术和 AI 应用领域的新想法特别感兴趣。
+                    </p>
+                    <div class="contact-methods">
+                        <a href="mailto:hello@example.com" class="contact-method">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">邮箱</span>
+                                <span class="contact-value">hello@example.com</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/" target="_blank" rel="noopener" class="contact-method">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">GitHub</span>
+                                <span class="contact-value">@yourusername</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-cta reveal" style="transition-delay: 0.2s">
+                    <div class="cta-card">
+                        <div class="cta-pattern"></div>
+                        <h3>开启对话</h3>
+                        <p>点击下方按钮，通过邮件与我取得联系。通常会在 24 小时内回复。</p>
+                        <a href="mailto:hello@example.com" class="btn btn-primary btn-lg">
+                            发送邮件
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 页脚 ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p class="footer-text">用代码连接创意与现实。</p>
+                    <p class="footer-copyright">&copy; <span id="year"></span> Personal Homepage. All rights reserved.</p>
+                </div>
+                <div class="footer-right">
+                    <a href="#hero" class="back-to-top">
+                        返回顶部
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
